@@ -1,21 +1,4 @@
-<?php
-
-if($_POST["submit"]) {
-    $recipient="ryan.parish@mapcoexpress.com";
-    $subject="OPS Manual Feedback";
-    $sender=$_POST["name"];
-    $senderEmail=$_POST["email"];
-		$issueType=$_POST["feedbackType"]
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$feedbackType\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
